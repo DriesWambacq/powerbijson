@@ -1,14 +1,5 @@
 [
     {
-        "name": "events",
-        "columns": [
-            { "name": "eventid", "dataType": "Int64" },
-            { "name": "name", "dataType": "string" },
-            { "name": "from", "dataType": "DateTime"},
-            { "name": "to", "dataType": "DateTime"}
-       ]
-    },
-    {
         "name": "attendees",
         "columns": [
             { "name": "attendeeid", "dataType": "Int64"},
@@ -31,6 +22,43 @@
             { "name": "Count of attendeeid running total in datediff", "expression": "CALCULATE(COUNTA('attendees'[attendeeid]),FILTER(ALLSELECTED('attendees'[datediff]),ISONORAFTER('attendees'[datediff], MAX('attendees'[datediff]), DESC)))"},
             { "name": "% of total attendeeid", "expression": "if (ISFILTERED(attendees[datediff]),[CountID]/CALCULATE([CountID], ALL(attendees[datediff])))"},
             { "name": "% of total attendeeid running total in datediff", "expression": "CALCULATE([% of total attendeeid],FILTER(ALLSELECTED('attendees'[datediff]),ISONORAFTER('attendees'[datediff], MAX('attendees'[datediff]), DESC)))"}
+        ]
+    },
+    {
+        "name": "events",
+        "columns": [
+            { "name": "eventid", "dataType": "Int64" },
+            { "name": "name", "dataType": "string" },
+            { "name": "from", "dataType": "DateTime"},
+            { "name": "to", "dataType": "DateTime"}
+       ]
+    },
+    {
+        "name": "eventcheckins",
+        "columns": [
+            { "name": "eventcheckinid", "dataType": "Int64"},
+            { "name": "eventid", "dataType": "Int64"},
+            { "name": "attendeeid", "dataType": "Int64"},
+            { "name": "timestamp", "dataType": "DateTime"}
+        ]
+    },
+    {
+        "name": "sessioncheckins",
+        "columns": [
+            { "name": "sessioncheckinid", "dataType": "Int64"},
+            { "name": "eventid", "dataType": "Int64"},
+            { "name": "attendeeid", "dataType": "Int64"},
+            { "name": "sessionid", "dataType": "Int64"},
+            { "name": "time", "dataType": "DateTime"}
+        ]
+    },
+    {
+        "name": "sessionregistrations",
+        "columns": [
+            { "name": "sessionregistrationid", "dataType": "Int64"},
+            { "name": "eventid", "dataType": "Int64"},
+            { "name": "attendeeid", "dataType": "Int64"},
+            { "name": "sessionid", "dataType": "Int64"},
         ]
     },
     {
