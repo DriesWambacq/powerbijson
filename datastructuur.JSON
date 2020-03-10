@@ -1,0 +1,69 @@
+[
+    {
+        "name": "events",
+        "columns": [
+            { "name": "eventid", "dataType": "Int64" },
+            { "name": "name", "dataType": "string" },
+            { "name": "from", "dataType": "DateTime"},
+            { "name": "to", "dataType": "DateTime"}
+       ]
+    },
+    {
+        "name": "attendees",
+        "columns": [
+            { "name": "attendeeid", "dataType": "Int64"},
+            { "name": "eventid", "dataType": "Int64"},
+            { "name": "tickettypeid", "dataType": "Int64"},
+            { "name": "firstname", "dataType": "string"},
+            { "name": "lastname", "dataType": "string"},
+            { "name": "email", "dataType": "string"},
+            { "name": "jobtitle", "dataType": "string"},
+            { "name": "role", "dataType": "string"},
+            { "name": "company", "dataType": "string"},
+            { "name": "country", "dataType": "string"},
+            { "name": "veggie", "dataType": "string"},
+            { "name": "registration_date", "dataType": "DateTime"},
+            { "name": "registration_amount", "dataType": "Int64"},
+            { "name": "datediff", "dataType": "Int64"}
+        ],
+        "measures": [
+            { "name": "CountID", "expression": "count(attendees[attendeeid])"},
+            { "name": "Count of attendeeid running total in datediff", "expression": "CALCULATE(COUNTA('attendees'[attendeeid]),FILTER(ALLSELECTED('attendees'[datediff]),ISONORAFTER('attendees'[datediff], MAX('attendees'[datediff]), DESC)))"},
+            { "name": "% of total attendeeid", "expression": "if (ISFILTERED(attendees[datediff]),[CountID]/CALCULATE([CountID], ALL(attendees[datediff])))"},
+            { "name": "% of total attendeeid running total in datediff", "expression": "CALCULATE([% of total attendeeid],FILTER(ALLSELECTED('attendees'[datediff]),ISONORAFTER('attendees'[datediff], MAX('attendees'[datediff]), DESC)))"}
+        ]
+    },
+    {
+        "name": "sessions",
+        "columns": [
+            { "name": "sessionid", "dataType": "Int64"},
+            { "name": "eventid", "dataType": "Int64"},
+            { "name": "name", "dataType": "string"},
+            { "name": "start", "dataType": "DateTime"},
+            { "name": "end", "dataType": "DateTime"},
+            { "name": "room", "dataType": "string"},
+            { "name": "track", "dataType": "string"}
+        ]
+    },
+    {
+        "name": "speakers",
+        "columns": [
+            { "name": "speakerid", "dataType": "string"},
+            { "name": "eventid", "dataType": "Int64"},
+            { "name": "firstname", "dataType": "string"},
+            { "name": "lastname", "dataType": "string"},
+            { "name": "company", "dataType": "string"},
+            { "name": "jobtitle", "dataType": "string"},
+            { "name": "bio", "dataType": "string"}
+        ]
+    },
+    {
+        "name": "tickettypes",
+        "columns": [
+            { "name": "tickettypeid", "dataType": "Int64"},
+            { "name": "eventid", "dataType": "string"},
+            { "name": "name", "dataType": "string"},
+            { "name": "price", "dataType": "Int64"}
+        ]
+    }
+  ]

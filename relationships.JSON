@@ -1,0 +1,10 @@
+[
+    {
+        "name": "fromTickettypesToAttendees",
+        "toTable": "tickettypes",
+        "toColumn": "tickettypeid",
+        "fromTable": "attendees",
+        "fromColumn": "tickettypeid",
+        "crossFilteringBehavior": "oneDirection"
+    }
+]
