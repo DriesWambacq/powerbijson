@@ -65,5 +65,14 @@
             { "name": "name", "dataType": "string"},
             { "name": "price", "dataType": "Int64"}
         ]
+    },
+    {
+        "name": "eventcheckins",
+        "columns": [
+            { "name": "eventcheckinid", "dataType": "Int64"},
+            { "name": "eventid", "dataType": "Int64"},
+            { "name": "attendeeid", "dataType": "Int64"},
+            { "name": "timestamp", "dataType": "DateTime"}
+        ]
     }
   ]
