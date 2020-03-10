@@ -74,5 +74,24 @@
             { "name": "attendeeid", "dataType": "Int64"},
             { "name": "timestamp", "dataType": "DateTime"}
         ]
+    },
+    {
+        "name": "sessioncheckins",
+        "columns": [
+            { "name": "sessioncheckinid", "dataType": "Int64"},
+            { "name": "eventid", "dataType": "Int64"},
+            { "name": "attendeeid", "dataType": "Int64"},
+            { "name": "sessionid", "dataType": "Int64"},
+            { "name": "time", "dataType": "DateTime"}
+        ]
+    },
+    {
+        "name": "sessionregistrations",
+        "columns": [
+            { "name": "sessionregistrationid", "dataType": "Int64"},
+            { "name": "eventid", "dataType": "Int64"},
+            { "name": "attendeeid", "dataType": "Int64"},
+            { "name": "sessionid", "dataType": "Int64"}
+        ]
     }
   ]
