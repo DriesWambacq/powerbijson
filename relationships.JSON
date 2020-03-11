@@ -1,10 +1,31 @@
 [
     {
-        "name": "fromTickettypesToAttendees",
-        "toTable": "tickettypes",
-        "toColumn": "tickettypeid",
+        "name": "fromAttendeesToTickettypes",
         "fromTable": "attendees",
         "fromColumn": "tickettypeid",
+        "toTable": "tickettypes",
+        "toColumn": "tickettypeid",
         "crossFilteringBehavior": "oneDirection"
+    },
+    {
+        "name": "fromEventToEventcheckins",
+        "fromTable": "eventcheckins",
+        "fromColumn": "eventid",
+        "toTable": "events",
+        "toColumn": "eventid"
+    },
+    {
+        "name": "fromEventcheckinsToAttendees",
+        "fromTable": "eventcheckins",
+        "fromColumn": "attendeeid",
+        "toTable": "attendees",
+        "toColumn": "attendeeid"
+    },
+    {
+        "name": "fromSessionregistrationsToAttendees",
+        "fromTable": "sessionregistrations",
+        "fromColumn": "attendeeid",
+        "toTable": "attendees",
+        "toColumn": "attendeeid"
     }
 ]
