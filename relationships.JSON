@@ -27,5 +27,26 @@
         "fromColumn": "attendeeid",
         "toTable": "attendees",
         "toColumn": "attendeeid"
+    },
+    {
+        "name": "fromSessioncheckinsToAttendees",
+        "fromTable": "sessioncheckins",
+        "fromColumn": "attendeeid",
+        "toTable": "attendees",
+        "toColumn": "attendeeid"
+    },
+    {
+        "name": "fromSessionregistrationsToSessions",
+        "fromTable": "sessionregistrations",
+        "fromColumn": "sessionid",
+        "toTable": "sessions",
+        "toColumn": "sessionid"
+    },
+    {
+        "name": "fromSessioncheckinsToSessions",
+        "fromTable": "sessioncheckins",
+        "fromColumn": "sessionid",
+        "toTable": "sessions",
+        "toColumn": "sessionid"
     }
 ]
