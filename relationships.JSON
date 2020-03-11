@@ -48,5 +48,12 @@
         "fromColumn": "sessionid",
         "toTable": "sessions",
         "toColumn": "sessionid"
+    },
+    {
+        "name": "fromSessionsToEvents",
+        "fromTable": "sessions",
+        "fromColumn": "eventid",
+        "toTable": "events",
+        "toColumn": "eventid"
     }
 ]
