@@ -55,5 +55,19 @@
         "fromColumn": "eventid",
         "toTable": "events",
         "toColumn": "eventid"
+    },
+    {
+        "name": "fromSpeakersessionsToSessions",
+        "fromTable": "speakersessions",
+        "fromColumn": "sessionid",
+        "toTable": "sessions",
+        "toColumn": "sessionid"
+    },
+    {
+        "name": "fromSpeakersessionsToSpeakers",
+        "fromTable": "speakersessions",
+        "fromColumn": "speakerid",
+        "toTable": "speakers",
+        "toColumn": "speakerid"
     }
 ]
