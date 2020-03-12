@@ -105,7 +105,7 @@
         ]
     },
     {
-        "name": "surveryquestions",
+        "name": "surveyquestions",
         "columns": [
             { "name": "surveyquestionid", "dataType": "Int64"},
             { "name": "eventid", "dataType": "Int64"},
