@@ -48,8 +48,7 @@
         "fromTable": "sessioncheckins",
         "fromColumn": "sessionid",
         "toTable": "sessions",
-        "toColumn": "sessionid",
-        "crossFilteringBehavior": "BothDirections"
+        "toColumn": "sessionid"
     },
     {
         "name": "fromSessionsToEvents",
@@ -72,5 +71,19 @@
         "fromColumn": "speakerid",
         "toTable": "speakers",
         "toColumn": "speakerid"
+    },
+    {
+        "name": "fromSurveyanswersToAttendees",
+        "fromTable": "surveyanswers",
+        "fromColumn": "attendeeid",
+        "toTable": "attendees",
+        "toColumn": "attendeeid"
+    },
+    {
+        "name": "fromSurveyanswersToSurveyquestions",
+        "fromTable": "surveyanswers",
+        "fromColumn": "surveyquestionid",
+        "toTable": "surveyquestions",
+        "toColumn": "surveyquestionid"
     }
 ]

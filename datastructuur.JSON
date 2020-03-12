@@ -103,5 +103,23 @@
             { "name": "speakerid", "dataType": "Int64"},
             { "name": "role", "dataType": "string"}
         ]
+    },
+    {
+        "name": "surveryquestions",
+        "columns": [
+            { "name": "surveyquestionid", "dataType": "Int64"},
+            { "name": "eventid", "dataType": "Int64"},
+            { "name": "question", "dataType": "string"}
+        ]
+    },
+    {
+        "name": "surveyanswers",
+        "columns": [
+            { "name": "surveryanswerid", "dataType": "Int64"},
+            { "name": "eventid", "dataType": "Int64"},
+            { "name": "surveryquestionid", "dataType": "Int64"},
+            { "name": "attendeeid", "dataType": "Int64"},
+            { "name": "answer", "dataType": "Int64"}
+        ]
     }
   ]
