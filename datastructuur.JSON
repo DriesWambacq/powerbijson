@@ -117,7 +117,7 @@
         "columns": [
             { "name": "surveryanswerid", "dataType": "Int64"},
             { "name": "eventid", "dataType": "Int64"},
-            { "name": "surveryquestionid", "dataType": "Int64"},
+            { "name": "surveyquestionid", "dataType": "Int64"},
             { "name": "attendeeid", "dataType": "Int64"},
             { "name": "answer", "dataType": "Int64"}
         ]
