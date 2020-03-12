@@ -40,14 +40,16 @@
         "fromTable": "sessionregistrations",
         "fromColumn": "sessionid",
         "toTable": "sessions",
-        "toColumn": "sessionid"
+        "toColumn": "sessionid",
+        "crossFilteringBehavior": "BothDirections"
     },
     {
         "name": "fromSessioncheckinsToSessions",
         "fromTable": "sessioncheckins",
         "fromColumn": "sessionid",
         "toTable": "sessions",
-        "toColumn": "sessionid"
+        "toColumn": "sessionid",
+        "crossFilteringBehavior": "BothDirections"
     },
     {
         "name": "fromSessionsToEvents",
@@ -61,7 +63,8 @@
         "fromTable": "speakersessions",
         "fromColumn": "sessionid",
         "toTable": "sessions",
-        "toColumn": "sessionid"
+        "toColumn": "sessionid",
+        "crossFilteringBehavior": "BothDirections"
     },
     {
         "name": "fromSpeakersessionsToSpeakers",
