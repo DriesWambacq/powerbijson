@@ -85,5 +85,33 @@
         "fromColumn": "surveyquestionid",
         "toTable": "surveyquestions",
         "toColumn": "surveyquestionid"
+    },
+    {
+        "name": "fromSessionratingsToSessions",
+        "fromTable": "sessionratings",
+        "fromColumn": "sessionid",
+        "toTable": "sessions",
+        "toColumn": "sessionid"
+    },
+    {
+        "name": "fromSessionratingsToAttendees",
+        "fromTable": "sessionratings",
+        "fromColumn": "attendeeid",
+        "toTable": "attendeess",
+        "toColumn": "attendeeid"
+    },
+    {
+        "name": "fromSpeakerratingsToSessions",
+        "fromTable": "speakerratings",
+        "fromColumn": "speakerid",
+        "toTable": "speakers",
+        "toColumn": "speakerid"
+    },
+    {
+        "name": "fromSpeakerratingsToAttendees",
+        "fromTable": "speakerratings",
+        "fromColumn": "attendeeid",
+        "toTable": "attendeess",
+        "toColumn": "attendeeid"
     }
 ]
