@@ -111,7 +111,7 @@
         "name": "fromSpeakerratingsToAttendees",
         "fromTable": "speakerratings",
         "fromColumn": "attendeeid",
-        "toTable": "attendeess",
+        "toTable": "attendees",
         "toColumn": "attendeeid"
     }
 ]
