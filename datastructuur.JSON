@@ -121,5 +121,25 @@
             { "name": "attendeeid", "dataType": "Int64"},
             { "name": "answer", "dataType": "Int64"}
         ]
+    },
+    {
+        "name": "speakerratings",
+        "columns": [
+            { "name": "speakerratingid", "dataType": "Int64"},
+            { "name": "eventid", "dataType": "Int64"},
+            { "name": "speakerid", "dataType": "Int64"},
+            { "name": "attendeeid", "dataType": "Int64"},
+            { "name": "rating", "dataType": "Int64"}
+        ]
+    },
+    {
+        "name": "sessionratings",
+        "columns": [
+            { "name": "sessionratingid", "dataType": "Int64"},
+            { "name": "eventid", "dataType": "Int64"}, 
+            { "name": "sessionid", "dataType": "Int64"},
+            { "name": "attendeeid", "dataType": "Int64"},
+            { "name": "rating", "dataType": "Int64"}
+        ]
     }
   ]
