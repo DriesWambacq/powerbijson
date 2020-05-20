@@ -40,7 +40,7 @@
         "fromTable": "sessionregistrations",
         "fromColumn": "sessionid",
         "toTable": "sessions",
-        "toColumn": "sessionid",
+        "toColumn": "sessionid"
     },
     {
         "name": "fromSessioncheckinsToSessions",
