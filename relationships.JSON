@@ -40,15 +40,15 @@
         "fromTable": "sessionregistrations",
         "fromColumn": "sessionid",
         "toTable": "sessions",
-        "toColumn": "sessionid"
+        "toColumn": "sessionid",
+        "crossFilteringBehavior": "BothDirections"
     },
     {
         "name": "fromSessioncheckinsToSessions",
         "fromTable": "sessioncheckins",
         "fromColumn": "sessionid",
         "toTable": "sessions",
-        "toColumn": "sessionid",
-        "crossFilteringBehavior": "BothDirections"
+        "toColumn": "sessionid"
     },
     {
         "name": "fromSessionsToEvents",
@@ -91,31 +91,27 @@
         "fromTable": "sessionratings",
         "fromColumn": "sessionid",
         "toTable": "sessions",
-        "toColumn": "sessionid",
-        "crossFilteringBehavior": "BothDirections"
+        "toColumn": "sessionid"
     },
     {
         "name": "fromSessionratingsToAttendees",
         "fromTable": "sessionratings",
         "fromColumn": "attendeeid",
         "toTable": "attendees",
-        "toColumn": "attendeeid",
-        "crossFilteringBehavior": "BothDirections"
+        "toColumn": "attendeeid"
     },
     {
-        "name": "fromSpeakerratingsToSpeakers",
+        "name": "fromSpeakerratingsToSessions",
         "fromTable": "speakerratings",
         "fromColumn": "speakerid",
         "toTable": "speakers",
-        "toColumn": "speakerid",
-        "crossFilteringBehavior": "BothDirections"
+        "toColumn": "speakerid"
     },
     {
         "name": "fromSpeakerratingsToAttendees",
         "fromTable": "speakerratings",
         "fromColumn": "attendeeid",
         "toTable": "attendees",
-        "toColumn": "attendeeid",
-        "crossFilteringBehavior": "BothDirections"
+        "toColumn": "attendeeid"
     }
 ]
