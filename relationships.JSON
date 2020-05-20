@@ -41,7 +41,6 @@
         "fromColumn": "sessionid",
         "toTable": "sessions",
         "toColumn": "sessionid",
-        "crossFilteringBehavior": "BothDirections"
     },
     {
         "name": "fromSessioncheckinsToSessions",
