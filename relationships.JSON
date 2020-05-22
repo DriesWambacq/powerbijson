@@ -5,7 +5,7 @@
         "fromColumn": "tickettypeid",
         "toTable": "tickettypes",
         "toColumn": "tickettypeid",
-        "crossFilteringBehavior": "oneDirection"
+        "crossFilteringBehavior": "BothDirections"
     },
     {
         "name": "fromEventToEventcheckins",
